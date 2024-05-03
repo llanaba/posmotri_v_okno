@@ -16,11 +16,7 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  outline: 1px solid yellow;
   padding: 133px 30px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 h1,
@@ -42,8 +38,18 @@ ol {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .content {
-  outline: 1px solid salmon;
+  /* outline: 1px solid salmon; */
   width: 1140px;
   height: 534px;
   /* height: 100%; */
@@ -55,14 +61,15 @@ ol {
 }
 
 .result {
-  outline: 1px solid lightcyan;
-  background-color: rgba(160, 255, 160, 0.3);
+  /* outline: 1px solid lightcyan;
+  background-color: rgba(160, 255, 160, 0.3); */
   display: grid;
   gap: 16px;
   width: 711px;
 }
 
 .result__video-container {
+  position: relative;
   width: 100%;
   height: 386px;
 }
@@ -75,8 +82,8 @@ ol {
 }
 
 .search-form {
-  outline: 1px solid orange;
-  background-color: rgba(116, 223, 214, 0.3);
+  /* outline: 1px solid orange;
+  background-color: rgba(116, 223, 214, 0.3); */
   display: flex;
   gap: 40px;
   /* align-items: flex-start; */
@@ -84,8 +91,8 @@ ol {
 }
 
 .content__details {
-  outline: 1px solid lightpink;
-  background-color: rgb(222 184 135 / 0.3);
+  /* outline: 1px solid lightpink;
+  background-color: rgb(222 184 135 / 0.3); */
   width: 100%;
   height: 100%;
   display: flex;
@@ -95,8 +102,9 @@ ol {
 }
 
 .content__list {
-  outline: 1px solid white;
-  background-color: rgba(255, 232, 21, 0.3);
+  position: relative;
+  /* outline: 1px solid white;
+  background-color: rgba(255, 232, 21, 0.3); */
   height: 298px;
   overflow-y: scroll;
 }
@@ -117,4 +125,43 @@ ol {
   outline: 1px dotted white;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.title {
+  font-family: Oswald;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__card-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content__video-card-title {
+  color: #fff;
+  font-family: Oswald;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.content__video-card-description {
+  font-size: 18px;
+  line-height: 0.9;
 }
