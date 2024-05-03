@@ -13,9 +13,14 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  outline: 1px solid yellow;
+  padding: 133px 30px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 h1,
@@ -35,4 +40,81 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  outline: 1px solid salmon;
+  width: 1140px;
+  height: 534px;
+  /* height: 100%; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 711px 399px;
+  gap: 30px;
+  align-items: end;
+}
+
+.result {
+  outline: 1px solid lightcyan;
+  background-color: rgba(160, 255, 160, 0.3);
+  display: grid;
+  gap: 16px;
+  width: 711px;
+}
+
+.result__video-container {
+  width: 100%;
+  height: 386px;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.search-form {
+  outline: 1px solid orange;
+  background-color: rgba(116, 223, 214, 0.3);
+  display: flex;
+  gap: 40px;
+  /* align-items: flex-start; */
+  justify-content: space-between;
+}
+
+.content__details {
+  outline: 1px solid lightpink;
+  background-color: rgb(222 184 135 / 0.3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  justify-content: flex-end;
+}
+
+.content__list {
+  outline: 1px solid white;
+  background-color: rgba(255, 232, 21, 0.3);
+  height: 298px;
+  overflow-y: scroll;
+}
+
+.content__list-item {
+  /* outline: 1px dashed springgreen; */
+  padding-bottom: 30px;
+}
+
+.content__video-card {
+  outline: 1px dashed burlywood;
+  display: grid;
+  height: 107px;
+  grid-template-columns: 200px 194px;
+}
+
+.content__video-card-thumbnail {
+  outline: 1px dotted white;
+  width: 100%;
+  height: 100%;
 }
