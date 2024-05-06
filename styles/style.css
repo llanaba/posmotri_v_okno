@@ -56,7 +56,7 @@ ol {
   inline-size: 1140px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 711px 1fr;
+  grid-template-columns: 711px 399px;
   gap: 30px;
   align-items: end;
 }
@@ -221,7 +221,7 @@ ol {
 .content__video-card {
   display: grid;
   block-size: 107px;
-  grid-template-columns: 200px 194px;
+  grid-template-columns: 200px 1fr;
 }
 
 .content__video-card-thumbnail {
